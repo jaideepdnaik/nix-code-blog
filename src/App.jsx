@@ -1,7 +1,16 @@
-export default function App() {
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Register from './components/Register';
+
+function App() {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <BrowserRouter>
+      <Routes>
+        {/* <Route path="/" element={<Home />} /> */}
+        {/* <Route path="/login" element={<Login />} /> */}
+        <Route path="/register" element={<Register />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
+
+export default App;
